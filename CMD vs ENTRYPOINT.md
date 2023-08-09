@@ -21,7 +21,9 @@ The CMD instruction has three forms -
 *CMD command param1 param2 (It is the shell form)*
 
 **Example -**
+
 *$ CMD echo "Command in Shell Form"*
+
 *$ CMD ["/bin/bash", "-c", "echo Command in Exec Form"]*
 
 # ENTRYPOINT Instruction
