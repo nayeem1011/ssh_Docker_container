@@ -4,9 +4,9 @@ Create a file named Dockerfile (with no file extension) and add the following co
 
 *FROM ubuntu:latest*
 
-  *RUN apt-get update && \*
+ RUN apt-get update && \
   
-   *apt-get install -y openssh-server && \*
+   apt-get install -y openssh-server && \
    
    *mkdir /var/run/sshd*
   
