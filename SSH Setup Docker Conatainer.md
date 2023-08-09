@@ -2,13 +2,15 @@
 # Create a Dockerfile:
 Create a file named Dockerfile (with no file extension) and add the following content:
 
-FROM ubuntu:latest
+*FROM ubuntu:latest*
 
-  RUN apt-get update && \
-   apt-get install -y openssh-server && \
-   mkdir /var/run/sshd
+  *RUN apt-get update && \*
   
-  RUN echo 'root:password' | chpasswd
+   *apt-get install -y openssh-server && \*
+   
+   *mkdir /var/run/sshd*
+  
+  *RUN echo 'root:password' | chpasswd*
 
 # Build the Docker Image:
 In your terminal, navigate to the directory containing the Dockerfile and run
@@ -26,7 +28,9 @@ Run the following command to start the container:
 
 # Access the SSH Server:
 
-### ssh root@localhost -p 2222
+### ssh root@localhost -p 222 
+
+
 
 
 
