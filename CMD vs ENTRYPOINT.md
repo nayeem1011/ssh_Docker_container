@@ -14,17 +14,17 @@ inside a single dockerfile, the one specified at the last will only be executed.
 
 The CMD instruction has three forms -
 
-*CMD ["only_executable","parameter_1","parameter_1"] (executable form)*
+ *CMD ["only_executable","parameter_1","parameter_1"] (executable form)*
 
-*CMD ["parameter_1","parameter_2"] (used to provide default parameters to the ENTRYPOINT instruction)*
+ *CMD ["parameter_1","parameter_2"] (used to provide default parameters to the ENTRYPOINT instruction)*
 
-*CMD command param1 param2 (It is the shell form)*
+ *CMD command param1 param2 (It is the shell form)*
 
 **Example -**
 
-*$ CMD echo "Command in Shell Form"*
+ *$ CMD echo "Command in Shell Form"*
 
-*$ CMD ["/bin/bash", "-c", "echo Command in Exec Form"]*
+ *$ CMD ["/bin/bash", "-c", "echo Command in Exec Form"]*
 
 # ENTRYPOINT Instruction
 The ENTRYPOINT instruction looks almost similar to the CMD instruction. However, the main highlighting 
@@ -35,15 +35,15 @@ When we have specified the ENTRYPOINT instruction in the executable form, it all
 some additional arguments/parameters using the CMD instruction in Dockerfile. If we have used it in the
 shell form, it will ignore any of the CMD parameters or even any CLI arguments.
 The forms of the ENTRYPOINT Instruction are -
-*ENTRYPOINT ["only_executable", "parameter_1", "parameter_2"] (executable form)*
+ *ENTRYPOINT ["only_executable", "parameter_1", "parameter_2"] (executable form)*
 
-*ENTRYPOINT command parameter_1 parameter_2 (Shell form)*
+ *ENTRYPOINT command parameter_1 parameter_2 (Shell form)*
 
 **Example -**
 
-*$ ENTRYPOINT echo "Welcome to TutorialsPoint"*
+ *$ ENTRYPOINT echo "Welcome to TutorialsPoint"*
 
-*$ ENTRYPOINT ["/bin/bash", "-c", "echo Welcome to TutorialsPoint"]*
+ *$ ENTRYPOINT ["/bin/bash", "-c", "echo Welcome to TutorialsPoint"]*
 
 
 
