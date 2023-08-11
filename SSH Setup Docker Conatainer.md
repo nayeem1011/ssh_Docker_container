@@ -6,7 +6,7 @@ Create a file named Dockerfile (with no file extension) and add the following co
 
  RUN apt-get update && \
   
-   apt-get install -y openssh-server && \
+    apt-get install -y openssh-server && \
    
    *mkdir /var/run/sshd*
   
@@ -28,7 +28,7 @@ Run the following command to start the container:
 
 # Access the SSH Server:
 
-### ssh root@localhost -p 222 
+### ssh root@localhost -p 2222
 
 
 
